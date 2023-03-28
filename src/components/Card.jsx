@@ -51,39 +51,39 @@ export function Card({ data }) {
         <div className="flex gap-x-5">
           <h1
             className={`text-4xl font-bold ${
-              tmaLevel === 1
+              tmaLevel === 3
                 ? "text-green-900"
                 : tmaLevel === 2
                 ? "text-yellow-900"
-                : tmaLevel === 3
+                : tmaLevel === 1
                 ? "text-red-900"
                 : "text-blue-900"
             }`}
           >
-            {tmaLevel === 1
+            {tmaLevel === 3
               ? "SIAGA 3"
               : tmaLevel === 2
               ? "SIAGA 2"
-              : tmaLevel === 3
+              : tmaLevel === 1
               ? "SIAGA 1"
               : "AMAN"}{" "}
             <br /> (
-            {tmaLevel === 1
+            {tmaLevel === 3
               ? "SIAGA"
               : tmaLevel === 2
               ? "WASPADA"
-              : tmaLevel === 3
+              : tmaLevel === 1
               ? "AWAS"
               : "NORMAL"}
             )
           </h1>
           <div
             className={`w-24 h-24 ${
-              tmaLevel === 1
+              tmaLevel === 3
                 ? "bg-green-600"
                 : tmaLevel === 2
                 ? "bg-yellow-300"
-                : tmaLevel === 3
+                : tmaLevel === 1
                 ? "bg-red-600"
                 : "bg-blue-600"
             }`}
